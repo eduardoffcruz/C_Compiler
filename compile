@@ -1,0 +1,1 @@
+lex $1.l && yacc -d $1.y && gcc -g -Wall -o $1 lex.yy.c y.tab.c semantics.c ast.c symbol_table.c code_generator.c

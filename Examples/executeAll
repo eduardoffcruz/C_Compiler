@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for filename in *.c ; do 
+    ../uccompiler < $filename > ${filename%.c}.ll && lli ${filename%.c}.ll > ${filename%.c}.out; 
+done
+echo "Sucess!"
+
+
+
